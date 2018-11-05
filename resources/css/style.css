@@ -17,7 +17,7 @@ a {
 
 span {
   background-color: black;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .container {
@@ -79,15 +79,19 @@ header img {
 
 /* Menu */
 
-.menu {
+.menu, .web-menu {
 background-color: firebrick;
 }
 
-.menu .container{
+.menu .container, .web-menu .container{
   padding: 0.75rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.web-menu {
+  display: none;
 }
 
 /* Products */
@@ -143,7 +147,6 @@ background-color: firebrick;
 
 .location, .hours {
   width: 35%;
-  /* color: black; */
   display: flex;
   flex-direction: column;
 }
@@ -161,4 +164,41 @@ background-color: firebrick;
 
 footer {
   padding: 5rem 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+    margin:
+  }
+
+  /* Menu */
+  .menu {
+    display: none;
+  }
+
+  .web-menu {
+    display: block;
+  }
+
+  .web-menu .container {
+    justify-content: center;
+  }
+
+  /* Products */
+  .item {
+    width: 47%;
+  }
+
+  .three {
+    display: none;
+  }
+
+  /* Info */
+  .location, .hours {
+    width: 35%;
+  }
 }
