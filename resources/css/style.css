@@ -166,6 +166,7 @@ footer {
   padding: 5rem 0;
 }
 
+
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {
@@ -176,6 +177,7 @@ footer {
   }
 
   /* Menu */
+
   .menu {
     display: none;
   }
@@ -189,6 +191,7 @@ footer {
   }
 
   /* Products */
+
   .item {
     width: 47%;
   }
@@ -201,4 +204,69 @@ footer {
   .location, .hours {
     width: 35%;
   }
+}
+
+
+@media only screen and (max-width: 470px) {
+  /* Base Styling */
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.77rem;
+  }
+
+  /* Banner */
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .arrivals {
+    width: auto;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .arrivals h2 {
+    margin-bottom: 0.65rem;
+  }
+
+  /* Products */
+
+  .products .container {
+    justify-content: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .two, .three {
+    display: none;
+  }
+
+  /* Info */
+
+  .info .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info .container p {
+    margin-bottom: 0.5rem;
+  }
+
+  .location, .hours {
+    width: 90%;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
 }
