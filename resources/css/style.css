@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+span {
+  background-color: black;
+  width: 100%;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -122,5 +127,38 @@ background-color: firebrick;
   text-align: center;
   padding: 0.5rem 0;
   width: 100%;
-  background-color: black;
+}
+
+/* Info */
+
+.info {
+  padding-bottom: 4rem;
+  background-color: white;
+}
+
+.info .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location, .hours {
+  width: 35%;
+  /* color: black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.info .container p {
+  color: black;
+  margin-top: 0.5rem;
+}
+
+.info .container span {
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 5rem 0;
 }
